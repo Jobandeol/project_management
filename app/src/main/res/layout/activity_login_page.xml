@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       android:background="@drawable/email_password">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:singleLine="true"
+        android:textColorHint="#8b0b0909"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gradient_third"
+        android:paddingLeft="10dp"
+        android:id="@+id/user_email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:singleLine="true"
+        android:textColorHint="#8b0b0909"
+        android:layout_below="@+id/user_email"
+        android:background="@drawable/gradient_third"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/password"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textSize="25dp"
+        android:layout_below="@+id/password"
+        android:layout_margin="20dp"
+        android:background="@drawable/gradient_strock"
+        android:id="@+id/Login_button"
+        android:onClick="login_button"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/Login_button"
+        android:id="@+id/Text_forgot"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_below="@+id/Text_forgot"
+        android:layout_centerHorizontal="true">
+       </View>
+
+
+</RelativeLayout>

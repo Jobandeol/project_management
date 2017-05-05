@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="list_button">list</string>
+    <string name="board_button">board</string>
+    <string name="loading">loading..</string>
+</resources>

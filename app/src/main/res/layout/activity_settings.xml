@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fef59210">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"/>
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/settings"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="#eb20b4b9"
+        android:textSize="30dp"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="50dp"
+        android:id="@+id/text_settings"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#011514"
+        android:layout_below="@+id/text_settings"
+        android:id="@+id/view_setttings"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/view_setttings"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_editprofile"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/text_editprofile"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view_beloweditprofile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Teammates"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:layout_below="@+id/view_beloweditprofile"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_inviteteammates"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/text_inviteteammates"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view_belowinviteteammates"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Settings"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/view_belowinviteteammates"
+        android:paddingLeft="10dp"
+        android:id="@+id/text_notificationsettings"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/text_notificationsettings"
+        android:id="@+id/view_belownotificationsetings"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Guide"
+        android:textColor="#fff"
+        android:layout_below="@+id/view_belownotificationsetings"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_androidguide"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/text_androidguide"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view_belowandroidguide"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Support"
+        android:textSize="25dp"
+        android:layout_below="@id/view_belowandroidguide"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_contactsupport"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@+id/text_contactsupport"
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewbelowcontactsupport"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Terms of Service"
+        android:textSize="25dp"
+        android:layout_below="@id/viewbelowcontactsupport"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_viewtermsofservice"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/text_viewtermsofservice"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view_belowviewtermsofservice" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View licenses"
+        android:layout_below="@+id/view_belowviewtermsofservice"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/text_viewlicenses"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/text_viewlicenses"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view_belowviewlicenses"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="25dp"
+        android:layout_below="@+id/view_belowviewlicenses"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text_logout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@id/text_logout"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view_belowlogout"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

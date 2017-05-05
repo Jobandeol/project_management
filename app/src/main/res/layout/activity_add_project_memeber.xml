@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_project_memeber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#fdeaea"
+    tools:context="com.example.dell.myapplication.Add_project_memeber">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:id="@+id/top_layout"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:clickable="true"
+            android:onClick="canc/el"
+            android:id="@+id/cancel_image"
+            android:src="@android:drawable/ic_delete"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="search by email"
+            android:textColorHint="#ccc"
+
+            android:layout_toRightOf="@+id/cancel_image"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:id="@+id/email_et"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:clickable="true"
+            android:onClick="search_member"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/top_layout"
+        android:id="@+id/email_id"
+        android:padding="10dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD THIS MEMBER"
+        android:textColor="#000"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/add_member"
+        android:onClick="add_new_member"/>
+</RelativeLayout>

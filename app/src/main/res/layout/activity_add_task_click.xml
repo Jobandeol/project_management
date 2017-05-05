@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layer"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="#fff"
+            android:layout_margin="20dp"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:weightSum="4">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/tick"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:id="@+id/tick"
+            android:padding="15dp"
+            android:onClick="image_tick"
+          android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/heart"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:id="@+id/heart"
+            android:padding="15dp"
+            android:onClick="image_heart"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/pencil"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:id="@+id/pencil"
+            android:padding="15dp"
+            android:onClick="image_pencil"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/more_options"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:id="@+id/options"
+            android:padding="15dp"
+            android:onClick="image_options"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@id/linear_layer"
+        android:id="@+id/view_below_LL">
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#fff"
+        android:layout_below="@id/view_below_LL"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/add_task_circle_button"
+            android:text="FL"
+            android:textColor="#f40808"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/button_fl"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/black_cal"
+            android:layout_toRightOf="@id/button_fl"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:onClick="due_cal"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Date"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@id/linear_layer"
+        android:layout_marginTop="440dp"
+        android:id="@+id/view_black_btm"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Write a comment"
+        android:textColor="#000"
+        android:layout_below="@id/view_black_btm"
+        android:layout_marginLeft="10dp"
+        android:textColorHint="#000"
+        android:id="@+id/et_wac"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/clipboard1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    </RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "838485107131",
+    "project_id": "project-management-a0c68"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838485107131:android:f970ac42a2afe806",
+        "android_client_info": {
+          "package_name": "com.example.dell.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838485107131-5p94raoopmnp547q6uqrgrlbso3h5i9c.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "838485107131-mc5olcb9d236342nfpbn9ai0gvpvt788.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.myapplication",
+            "certificate_hash": "af9cd0876a5d3c56cd5353b209115f276c9081f3"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARFIznwjMoNuwk7ayRDUqr-7NCIdQgWSs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

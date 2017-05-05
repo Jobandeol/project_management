@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fff">
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textColorHint="#d6c9c2"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/et_my_project"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3b6b1b1"
+        android:layout_marginTop="130dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:layout_below="@id/et_my_project"
+        android:layout_marginTop="70dp"
+        android:id="@+id/laya"
+       >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/description"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textColorHint="#d3b6b1b1"
+            android:textStyle="italic"
+            android:textColor="#000"
+            android:background="@null"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/et_descrptn"
+            />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d3b6b1b1"
+            android:layout_marginTop="220dp"
+
+            />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:layout_below="@id/laya"
+        android:layout_marginTop="40dp"
+        android:id="@+id/layb">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/s_date"
+            android:layout_marginLeft="25dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Start date"
+            android:textColorHint="#d3b6b1b1"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:background="@null"
+            android:clickable="true"
+            android:textStyle="italic"
+            android:onClick="show_calender"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/start_date"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3b6b1b1"
+        android:layout_marginTop="310dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:layout_below="@id/layb"
+        android:layout_marginTop="40dp"
+        android:id="@+id/layc">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/due_date"
+            android:layout_marginLeft="25dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Due date"
+            android:textColorHint="#d3b6b1b1"
+            android:textSize="25dp"
+            android:background="@null"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="dd"
+            android:textStyle="italic"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="#000"
+            android:id="@+id/et_dd"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3b6b1b1"
+        android:layout_marginTop="410dp"
+        android:id="@+id/v_dd"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="35dp"
+        android:background="@drawable/plus_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/v_dd"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:onClick="plus"
+
+        />
+
+
+
+
+
+</RelativeLayout>
