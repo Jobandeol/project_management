@@ -1,0 +1,37 @@
+<?php
+
+$data = file_get_contents('php://input');
+
+$decoded_data = json_decode($data , true );
+
+
+
+$project_name = $decoded_data['pname_key'];
+$desc = $decoded_data['desc_key'];
+$start_date_et = $decoded_data['sdate_key'];
+$due_date_et = $decoded_data['ddate_key'];
+$user_id = $decoded_data['u_id_key'];
+
+
+$connection = mysqli_connect('localhost' , 'root' , '');
+
+mysqli_select_db($connection , 'project_mangement');
+
+$result = mysqli_query($connection , "insert into project_details (Title, Description,U_id , start_date, due_date  ) values ('$project_name' , '$desc' ,'$user_id' , '$start_date_et' , '$due_date_et' ) ");
+
+if($result)
+	
+	{
+		$response['response_key'] = "done";
+		
+		echo json_encode($response);
+	}
+	
+	else {
+		$response['response_key'] = "not done";
+		
+		echo json_encode($response);
+		
+	}
+
+?>
